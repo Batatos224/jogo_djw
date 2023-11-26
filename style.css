@@ -1,0 +1,140 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+div
+{
+    padding: 10px;
+margin: 10px;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonte/m3x6.ttf') format('truetype');
+  }
+  
+h1
+{
+    font-size: 40px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #000000;
+}
+h2
+{
+    font-size: 40px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #e9f6e3;
+}
+h3
+{
+    font-size: 80px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #e9f6e3;
+}
+
+.grid-container
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    background: linear-gradient(#626e60, #293425);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "a a"
+                         "b c"
+                         "d e"
+                         "f f";
+    padding: 30px;
+}
+
+#teste1
+{
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+    align-self: center;
+    justify-self: center;
+    height: 200px;
+    background: linear-gradient(#293425, #424d3c);
+    grid-area: a;
+}
+#teste2
+{
+    width: 90%;
+    height: 600px;
+    background: linear-gradient(#626e60, #f9fff0);
+    grid-area: b;
+}
+#teste3
+{
+    width: 90%;
+    height: 600px;
+    background: linear-gradient(#626e60, #f9fff0);
+    grid-area: c;
+    display: grid; place-items: center;
+}
+#teste4
+{
+    width: 90%;
+    height: 600px;
+    background: linear-gradient(#e9f6e3, #778476);
+    grid-area: d;
+    display: grid; place-items: center;
+}
+#teste5
+{
+    width: 90%;
+    height: 600px;
+    background: linear-gradient(#e9f6e3, #778476);
+    grid-area: e;
+}
+#teste6
+{
+    width: 80%;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+    background: linear-gradient(#293425, #424d3c);
+    grid-area: f;
+}
+a:link {
+    text-decoration: none;
+  }
+#geral
+{
+    width: 100%;
+    height: 100%;
+    grid-area: a b c d e f;
+    background-color: #293425;
+}
+#img
+{
+border: 5px solid #424d3c;
+}
+.button {
+    bottom: 100px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #e9f6e3;
+    background-color: #626e60;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #424d3c;
+    margin-bottom: 300px;
+  }
+.button:hover {background-color: #293425}
+
+.button:active {
+  background-color: #424d3c;
+  box-shadow: 0 5px #424d3c;
+  transform: translateY(4px);
+}
